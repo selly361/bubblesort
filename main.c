@@ -7,8 +7,13 @@ void bubblesort(int arr[10]);
 int main(void)
 {
 
-    signed int arr[10] = {3, 10, 2, 1, 5, 100, -5, 20, 9, 900};
+    int arr[10] = {3, 10, 2, 1, 5, 100, -5, 20, 9, 900};
     bubblesort(arr);
+
+    for(int i = 0; i < 10; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 
     return 0;
 }
@@ -28,10 +33,5 @@ void bubblesort(int arr[10])
                 arr[j] = temporary;
             }
         }
-    }
-
-    for(int i = 0; i < 10; i++)
-    {
-        printf("%d ", arr[i]);
     }
 }
